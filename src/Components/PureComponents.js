@@ -1,4 +1,5 @@
 import React from 'react'
+import Backnav from './Fetch/Backnav.js'
 
 class PureComponents extends React.PureComponent{
  constructor(){
@@ -20,6 +21,7 @@ class PureComponents extends React.PureComponent{
      console.log("Render");
      return(
          <div className="Content">
+            <Backnav/>
             <h1 className="center-align blue-grey-text">The Component Lifecycle</h1>
             <p>Counter : {this.state.counter}</p>
          </div>

@@ -104,3 +104,11 @@ code {
   margin-right: auto;
   width: 50%;
 }
+
+.fullprice {
+    text-decoration: line-through;
+}
+
+.floating-btn{
+  position: fixed;
+}

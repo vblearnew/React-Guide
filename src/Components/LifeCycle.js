@@ -1,5 +1,6 @@
 import React from 'react'
 import lifecycleimg from '../images/lifecycle.png'
+import Backnav from './Fetch/Backnav.js'
 
 class LifeCycle extends React.Component{
 constructor(){
@@ -27,6 +28,7 @@ shouldComponentUpdate(nextProps,nextState){
      console.log("Rendered")
      return(
          <div className="Content">
+            <Backnav/>
             <h1 className="center-align blue-grey-text">Life Cycle Methods</h1>
             <img src={lifecycleimg} alt="Logo" className="center-image"/>
          </div>
