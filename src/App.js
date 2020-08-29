@@ -28,8 +28,8 @@ class App extends React.Component{
           <Router>
             <Switch>
               <Route path="/" exact>
-                <div className="img center-img mt-6 mb-6">
-                  <img src={logo} alt="Logo" />
+                <div className="img mt-6 mb-6">
+                  <img src={logo} alt="Logo" className="center-image"/>
                 </div>
                 <h1 className="orange-text center-align">React Guide</h1>
                 <Navigation Links={this.state.Links} />

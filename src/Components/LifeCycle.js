@@ -12,23 +12,23 @@ constructor(){
 componentDidMount(){
     console.log("Component Did Mount")
     this.setState({
-        title:"Life Cycle"
+        title:"Life Cycle Method"
     })
     console.log(this.state)
  }
 shouldComponentUpdate(nextProps,nextState){
     console.log(nextState)
     console.log("should Component Update")
-    if(nextState === this.state.title){
+    if (this.state.title === nextState.title) {
         return false
-    }
+      } return true
 }
  render(){
      console.log("Rendered")
      return(
          <div className="Content">
             <h1 className="center-align blue-grey-text">Life Cycle Methods</h1>
-            {lifecycleimg}
+            <img src={lifecycleimg} alt="Logo" className="center-image"/>
          </div>
      )
  }
