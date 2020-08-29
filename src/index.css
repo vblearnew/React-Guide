@@ -94,7 +94,10 @@ code {
   margin-right: 30px !important;
 }
 
-
+.appContent{
+    margin: 0px auto;
+    width: 75%;
+}
 .center-image{
   display: block;
   margin-left: auto;
