@@ -9,6 +9,7 @@ import Fetch from './Components/Fetch.js';
 import LifeCycle from './Components/LifeCycle.js';
 import PureComponents from './Components/PureComponents.js';
 import Fragments from './Components/Fragments.js';
+import Reactmemo from './Components/ReactMemo.js';
 import logo from './images/logo.svg'; 
 
 
@@ -46,6 +47,9 @@ class App extends React.Component{
               </Route>  
               <Route path="/Fetch">
                 <Fetch/>
+              </Route>
+              <Route path="/ReactMemo">
+                <Reactmemo/>
               </Route>
             </Switch>
           </Router>
