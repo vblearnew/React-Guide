@@ -1,6 +1,6 @@
 import React from "react";
-import ErrorBoundaryChild from "./ErrorBoundaryChild";
-import ErrorComponent from "./ErrorComponent";
+import ErrorBoundaryChild from "./Fetch/ErrorBoundaryChild";
+import ErrorComponent from "./Fetch//ErrorComponent";
 
 class ErrorBoundary extends React.Component {
     constructor() {

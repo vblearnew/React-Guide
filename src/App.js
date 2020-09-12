@@ -11,7 +11,9 @@ import PureComponents from './Components/PureComponents.js';
 import Fragments from './Components/Fragments.js';
 import Reactmemo from './Components/ReactMemo.js';
 import HocExample from './Components/HocExample.js';
-import PropstypeCheck from './Components/PropstypeCheck.js'
+import PropstypeCheck from './Components/PropstypeCheck.js';
+import ErrorBoundary from './Components/ErrorBoundary.js';
+import ReactRef from './Components/ReactRef.js';
 import logo from './images/logo.svg'; 
 
 class App extends React.Component{
@@ -23,7 +25,9 @@ class App extends React.Component{
       {title:"Fetch",link:"/Fetch",description:"You can use any AJAX library you like with React. Some popular ones are Axios, jQuery AJAX, and the browser built-in window.fetch.You should populate data with AJAX calls in the componentDidMount lifecycle method. This is so you can use setState to update your component when the data is retrieved.",id:4},
       {title:"React Memo",link:"/ReactMemo",description:"React. memo is a higher order component. ... If your function component renders the same result given the same props, you can wrap it in a call to React. memo for a performance boost in some cases by memoizing the result. This means that React will skip rendering the component, and reuse the last rendered result.",id:5},
       {title:"HOC",link:"/HocExample",description:"A higher-order component (HOC) is an advanced technique in React for reusing component logic. HOCs are not part of the React API, per se. They are a pattern that emerges from React’s compositional nature.",id:6},
-      {title:"PropsTypes",link:"/PropstypeCheck",description:"As your app grows, you can catch a lot of bugs with typechecking. For some applications, you can use JavaScript extensions like Flow or TypeScript to typecheck your whole application. But even if you don’t use those, React has some built-in typechecking abilities. To run typechecking on the props for a component, you can assign the special propTypes property.",id:7}
+      {title:"PropsTypes",link:"/PropstypeCheck",description:"As your app grows, you can catch a lot of bugs with typechecking. For some applications, you can use JavaScript extensions like Flow or TypeScript to typecheck your whole application. But even if you don’t use those, React has some built-in typechecking abilities. To run typechecking on the props for a component, you can assign the special propTypes property.",id:7},
+      {title:"Error Boundary",link:"/ErrorBoundary",description:"In the past, JavaScript errors inside components used to corrupt React’s internal state and cause it to emit cryptic errors on next renders. These errors were always caused by an earlier error in the application code, but React did not provide a way to handle them gracefully in components, and could not recover from them.",id:8},
+      {title:"React Ref",link:"/ReactRef",description:"In the typical React dataflow, props are the only way that parent components interact with their children. To modify a child, you re-render it with new props. However, there are a few cases where you need to imperatively modify a child outside of the typical dataflow. The child to be modified could be an instance of a React component, or it could be a DOM element. For both of these cases, React provides an escape hatch.",id:9}
     ]
   }
   render(){
@@ -58,6 +62,12 @@ class App extends React.Component{
               </Route>
               <Route path="/PropstypeCheck">
                 <PropstypeCheck/>
+              </Route>
+              <Route path="/ErrorBoundary">
+                <ErrorBoundary/>
+              </Route>
+              <Route path="/ReactRef">
+                <ReactRef/>
               </Route>
             </Switch>
           </Router>
